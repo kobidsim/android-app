@@ -18,7 +18,6 @@ public class CardView extends AppCompatActivity {
     private Spinner nameSpinner;
     private ConstraintLayout parent;
     private ImageView cardImage;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

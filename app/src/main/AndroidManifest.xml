@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".CardView"></activity>
+        <activity android:name=".RecyclerView"></activity>
+        <activity android:name=".CardView" />
         <activity android:name=".TableLayout" />
         <activity android:name=".FrameLayout" />
         <activity android:name=".RelativeLayout" />
