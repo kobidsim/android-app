@@ -4,49 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RelativeLayout">
+    tools:context=".RelativeLayout"
+    android:layout_margin="20dp"
+    android:id="@+id/relativeLayout">
 
     <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Header"
+        android:fontFamily="@font/annie_use_your_telescope"
         android:padding="20dp"
-        />
+        android:text="Welcome to this page!"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameInput"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Here....."/>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/submitButton1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button"
-        android:layout_below="@id/header"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_toRightOf="@id/button"
-        android:layout_below="@id/header"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"/>
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars"
-        android:layout_below="@id/button"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="40dp"/>
-
-    <TextView
-        android:id="@+id/footer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_below="@id/image"
-        android:padding="20dp"/>
+        android:layout_below="@id/nameInput"
+        android:layout_marginTop="20dp" />
 
 </RelativeLayout>
