@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Button relativeLayout;
     private Button frameLayout;
     private Button tableLayout;
+    private Button cardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +32,13 @@ public class MainActivity extends AppCompatActivity {
         relativeLayout = (Button) findViewById(R.id.navToRelativeLayout);
         frameLayout = (Button) findViewById(R.id.navToFrameLayout);
         tableLayout = (Button) findViewById(R.id.navToTableLayout);
+        cardView = (Button) findViewById(R.id.navToCardView);
 
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent toLinear = new Intent(MainActivity.this, LinearLayout.class);
+                toLinear.putExtra("destination", "Linear Layout");
                 startActivity(toLinear);
             }
         });
@@ -61,6 +64,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toTable = new Intent(MainActivity.this, TableLayout.class);
                 startActivity(toTable);
+            }
+        });
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toCardView = new Intent(MainActivity.this, CardView.class);
+                startActivity(toCardView);
             }
         });
     }

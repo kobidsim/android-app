@@ -80,6 +80,18 @@
         app:layout_constraintTop_toBottomOf="@+id/divider"
         app:layout_constraintVertical_bias="0.722" />
 
+    <Button
+        android:id="@+id/navToCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card View"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.906" />
+
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"

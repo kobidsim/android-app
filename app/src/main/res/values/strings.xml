@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidApp</string>
+    <string-array name="names">
+        <item>Jhon</item>
+        <item>Harry</item>
+        <item>Ethan</item>
+        <item>Emily</item>
+        <item>Jake</item>
+    </string-array>
 </resources>

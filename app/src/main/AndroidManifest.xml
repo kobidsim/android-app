@@ -4,12 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/avatar"
+        android:icon="@mipmap/bulb"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".TableLayout"></activity>
+        <activity android:name=".CardView"></activity>
+        <activity android:name=".TableLayout" />
         <activity android:name=".FrameLayout" />
         <activity android:name=".RelativeLayout" />
         <activity android:name=".LinearLayout" />
